@@ -1,5 +1,7 @@
 Flask
 requests
 aiohttp
-telebot
-asyncio
+transformers
+torch
+Pillow
+
