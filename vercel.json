@@ -1,11 +1,12 @@
 {
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/app.py" }
+  ],
   "functions": {
     "api/app": {
       "handler": "api/app.app",
-      "runtime": "python3.10"
+      "runtime": "python3.8",
+      "memory": 128
     }
-  },
-  "routes": [
-    { "src": "/api", "dest": "/api/app" }
-  ]
+  }
 }
