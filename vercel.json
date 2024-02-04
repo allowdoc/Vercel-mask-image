@@ -1,11 +1,8 @@
 {
-  "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/app.py" }
-  ],
-  "functions": {
-    "api/app": {
-      "runtime": "python3.8",
-      "memory": 128
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "api/app.py"
     }
-  }
+  ]
 }
